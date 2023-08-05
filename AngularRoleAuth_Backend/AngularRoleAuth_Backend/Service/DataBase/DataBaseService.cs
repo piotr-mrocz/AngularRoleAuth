@@ -1,6 +1,6 @@
 ﻿using AngularRoleAuth_Backend.Entities;
 
-namespace AngularRoleAuth_Backend.Service;
+namespace AngularRoleAuth_Backend.Service.DataBase;
 
 public sealed class DataBaseService : IDataBaseService
 {
