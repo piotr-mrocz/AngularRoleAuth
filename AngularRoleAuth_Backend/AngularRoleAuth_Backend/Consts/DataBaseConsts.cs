@@ -1,7 +1,7 @@
 ﻿using AngularRoleAuth_Backend.Entities;
 using AngularRoleAuth_Backend.Enums;
 
-namespace AngularRoleAuth_Backend;
+namespace AngularRoleAuth_Backend.Consts;
 
 // I don't want to play with the database like MS SQL Server, because I do it every single day
 // and this is not what I want to learn
