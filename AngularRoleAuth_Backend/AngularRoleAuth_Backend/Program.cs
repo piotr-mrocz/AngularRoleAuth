@@ -17,7 +17,7 @@ builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(config =>
     {
 #pragma warning disable CS8604 // Possible null reference argument.
-        config.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+        config.TokenValidationParameters = new TokenValidationParameters
         {
             ValidIssuer = builder.Configuration["JwtIssuer"],
             ValidAudience = builder.Configuration["JwtIssuer"],
