@@ -1,5 +1,4 @@
-﻿using AngularRoleAuth_Backend.Entities;
-using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -16,7 +15,7 @@ public sealed class AuthService : IAuthService
         Configuration = configuration;
     }
 
-    public string GenerateToken(User user)
+    public string GenerateToken(Entities.User user)
     {
         var claims = new[]
         {

@@ -5,6 +5,6 @@ namespace AngularRoleAuth_Backend.Service.DataBase;
 public interface IDataBaseService
 {
     List<UserTask> GetAllTasks();
-    List<User> GetAllUsers();
-    User? GetUserByLogin(string login);
+    List<Entities.User> GetAllUsers();
+    Entities.User? GetUserByLogin(string login);
 }

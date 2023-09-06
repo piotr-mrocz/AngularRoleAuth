@@ -2,4 +2,5 @@
 
 public interface IAuthService
 {
+    string GenerateToken(Entities.User user);
 }
