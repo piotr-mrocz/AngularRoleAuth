@@ -2,6 +2,7 @@
 using AngularRoleAuth_Backend.Service.DataBase;
 using AngularRoleAuth_Backend.Service.Token;
 using AngularRoleAuth_Backend.Service.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AngularRoleAuth_Backend.Controllers;
@@ -44,7 +45,7 @@ public class AuthController : ControllerBase
         return Ok(tasks);
     }
 
-    [HttpPost]
+    [HttpGet, Authorize]
     public IActionResult GetMe()
     {
         return Ok(_userService.GetMyName());
