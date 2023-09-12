@@ -45,7 +45,7 @@ public class AuthController : ControllerBase
         return Ok(tasks);
     }
 
-    [HttpGet, Authorize]
+    [HttpGet, Authorize(Roles = "Admin")]
     public IActionResult GetMe()
     {
         return Ok(_userService.GetMyName());

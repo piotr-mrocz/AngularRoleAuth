@@ -27,4 +27,9 @@ export class AppComponent
       console.log(name);
     });
   }
+
+  public logout()
+  {
+    localStorage.removeItem('token');
+  }
 }
