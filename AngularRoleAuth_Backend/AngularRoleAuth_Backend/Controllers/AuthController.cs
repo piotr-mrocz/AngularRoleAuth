@@ -38,14 +38,14 @@ public class AuthController : ControllerBase
         return Ok(token);
     }
 
-    [HttpPost]
+    [HttpPost, Authorize(Roles = "Admin")]
     public IActionResult GetUsersTasks()
     {
         var tasks = _dbContext.GetAllTasks();
         return Ok(tasks);
     }
 
-    [HttpGet, Authorize(Roles = "Admin")]
+    [HttpGet, Authorize]
     public IActionResult GetMe()
     {
         return Ok(_userService.GetMyName());

@@ -1,0 +1,11 @@
+<nav>
+    <ul>
+        <li *ngFor="let menu of fiteredMenus">
+            <a [routerLink]="menu.path">{{ menu.text }}</a>
+        </li>
+    </ul>
+</nav>
+
+<div>
+    Logged in Role: {{role}}
+</div>

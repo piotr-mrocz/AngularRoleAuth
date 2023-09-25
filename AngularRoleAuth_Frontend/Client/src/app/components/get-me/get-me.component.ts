@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { ApiService } from './services/api.service';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-get-me',
+  templateUrl: './get-me.component.html',
+  styleUrls: ['./get-me.component.css']
 })
-export class AppComponent 
-{
-  title = 'Client';
 
+export class GetMeComponent 
+{
   constructor(private apiService: ApiService) { }
 
   public getMe()
